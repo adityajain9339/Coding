@@ -14,7 +14,7 @@ struct node *creatinglinkedlist(int no_node)
     {
         int data;
         struct node *newnode = (struct node *)malloc(sizeof(struct node));
-        printf("Enter the data in the node %d : ",i);
+        printf("Enter the data in the node %d : ", i);
         scanf("%d", &data);
         if (newnode == NULL)
         {
@@ -36,14 +36,23 @@ struct node *creatinglinkedlist(int no_node)
     }
     return head;
 }
+void linkedlistfree(struct node *head)
+{
+}
 
 int main()
 {
     int numberNode;
     printf("enter the number of node that you want to add ");
     scanf("%d", &numberNode);
-    struct node *head = creatinglinkedlist(numberNode);
-    printf("%p", (void *)head);
+    if (numberNode > 0)
+    {
+        struct node *head = creatinglinkedlist(numberNode);
+        printf("%p", (void *)head);
+    } else {
+        printf("value is not negetive so the function is not call!!!");
+    }
+    
 
     return 0;
 }
