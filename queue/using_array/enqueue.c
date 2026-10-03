@@ -44,7 +44,7 @@ void enqueue(struct Queue *q, int value) {
     printf("%d enqueued successfully\n", value);
 }
 // int main() {
-//     struct Queue q;
+//     struct Queue q;// this is the variable name 
 //     initQueue(&q);
 
 //     enqueue(&q, 10);
