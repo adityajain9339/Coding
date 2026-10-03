@@ -43,13 +43,24 @@ void enqueue(struct Queue *q, int value) {
 
     printf("%d enqueued successfully\n", value);
 }
-int main() {
-    struct Queue q;
-    initQueue(&q);
+// int main() {
+//     struct Queue q;
+//     initQueue(&q);
 
-    enqueue(&q, 10);
-    enqueue(&q, 20);
-    enqueue(&q, 30);
+//     enqueue(&q, 10);
+//     enqueue(&q, 20);
+//     enqueue(&q, 30);
+
+//     return 0;
+// }
+
+int main() {
+    struct Queue *q;
+    initQueue(q);
+
+    enqueue(q, 10);
+    enqueue(q, 20);
+    enqueue(q, 30);
 
     return 0;
 }
