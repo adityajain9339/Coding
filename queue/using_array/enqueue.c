@@ -55,7 +55,7 @@ void enqueue(struct Queue *q, int value) {
 // }
 
 int main() {
-    struct Queue *q;
+    struct Queue *q;// this is the pointer so we donot need the pass the array 
     initQueue(q);
 
     enqueue(q, 10);
