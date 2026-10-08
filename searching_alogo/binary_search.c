@@ -29,11 +29,11 @@ int binarysearch(int arr[], int size, int element)
 int main()
 {
     int size, element;
-    printf("Enter the size of your array");
+    printf("Enter the size of your array : ");
     scanf("%d", &size);
     int arr[size];
     inputofarray(size, arr);
-    printf("Enter the element you want to search in the array");
+    printf("Enter the element you want to search in the array : ");
     scanf("%d", &element);
     int found = binarysearch(arr, size, element);
     if (found == 0)
