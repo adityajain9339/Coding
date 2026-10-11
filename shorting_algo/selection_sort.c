@@ -18,7 +18,7 @@ void selectionSort(int arr[], int size)
         }
 
         // Swap the minimum element with arr[i]
-        if (minIndex != i)
+        if(minIndex != i)
         {
             temp = arr[i];
             arr[i] = arr[minIndex];
