@@ -40,3 +40,5 @@ int main(){
     printf("%d", a);
 
 }
+// - Time complexity: (O(N^2)) in the worst case.
+// - Auxiliary space complexity: (O(1)).
