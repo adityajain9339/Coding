@@ -13,13 +13,7 @@ struct node * creating_tree(int data){
     n->left=n->right=NULL;
     return n;
 }
-void inorder(struct node* root) {
-    if (root != NULL) {
-        inorder(root->left);
-        printf("%d ", root->data);
-        inorder(root->right);
-    }
-}
+
 int main(){
         // 1. Create all the nodes (1 through 7)
     struct node *n1 = creating_tree(1); // Root
@@ -53,5 +47,4 @@ int main(){
     printf("      2   3\n");
     printf("     / \\ / \\\n");
     printf("    4  5 6  7\n\n");
-    // inorder(n1);
 }
