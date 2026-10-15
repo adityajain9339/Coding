@@ -27,6 +27,7 @@ void selectionSort(int arr[], int size)
     }
 }
 
+
 // Function to print the array
 void printArray(int arr[], int size)
 {
