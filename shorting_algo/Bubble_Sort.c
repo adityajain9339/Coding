@@ -31,6 +31,7 @@ void printArray(int arr[], int size)
     printf("\n");
 }
 
+
 // Main function
 int main()
 {
