@@ -45,4 +45,5 @@ int main()
 // Complexity
 // - Time Complexity: O(n)
 // - Space Complexity: O(1)
-// Approach: Two pointers. Since the array is sorted, we compare each element with the last unique element and keep only distinct values.
+// Approach: Two pointers. Since the array is sorted, 
+// we compare each element with the last unique element and keep only distinct values.
