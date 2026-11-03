@@ -15,22 +15,14 @@
 
 
 // if the numbe is repeat in the array for two time then
-int linearsearchsecond(int *arr, int size, int element)
+int linearsearchsecond(int arr[], int size, int target)
 {
-    int count = 0;
-
     for (int i = 0; i < size; i++)
     {
-        if (*(arr+i) == element)
-        {
-            printf("element found in %d \n ",(i+1));
-            break;
-        } else {
-            printf("element not found!!");
-            break;
+        if(arr[i]==target){
+            return i;
         }
     }
-
     return -1;
 }
 void inputofarray(int size , int arr[]){
