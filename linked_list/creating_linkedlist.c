@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
+
 struct node
 {
     int data;
@@ -36,9 +36,16 @@ struct node *creatinglinkedlist(int no_node)
     }
     return head;
 }
-void linkedlistfree(struct node *head)
+void linklistTraversal(struct node *head)
 {
+    struct node *temp = head;
+    while(temp!=NULL){
+        printf("%d", temp->data);
+        temp = temp->next;
+        printf("->");
+    }
 }
+// struct node *
 
 int main()
 {
@@ -48,10 +55,12 @@ int main()
     if (numberNode > 0)
     {
         struct node *head = creatinglinkedlist(numberNode);
-        printf("%p", (void *)head);
+        // printf("%p", (void *)head);
+        linklistTraversal(head);
     } else {
         printf("value is not negetive so the function is not call!!!");
     }
+    
     
 
     return 0;
