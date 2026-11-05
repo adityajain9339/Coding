@@ -46,6 +46,19 @@ struct node *traversal(struct node *head){
     }
     
 }
+struct node *InsertionBeganning(struct node *head, int data){
+    struct node *newnode= (struct node *)malloc(sizeof(struct node));
+    if(newnode==NULL){
+        printf("the memory is full!!..");
+        return 0;
+    }
+    else{
+        newnode->data= data;
+        newnode->next=head;
+        head = newnode;
+        return head;
+    }
+}
 int main()
 {
     int numberNode;
@@ -55,10 +68,17 @@ int main()
     {
         struct node *head = creatinglinkedlist(numberNode);
         // printf("%p", (void *)head);
+        printf("before the insrtion :- \n");
         traversal(head);
+        head=InsertionBeganning(head, 45);
+        printf("after the insertion :-");
+        traversal(head);
+
+
     } else {
         printf("value is not negetive so the function is not call!!!");
     }
+
 
     
 
