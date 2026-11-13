@@ -17,6 +17,8 @@ struct node * enqueue(struct node *head, int data){
         head = newnode;
         return head;
     }
+
+    
 }
 int main(){
 
